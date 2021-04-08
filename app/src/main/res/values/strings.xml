@@ -2,6 +2,5 @@
     <string name="app_name">Widgets</string>
     <string name="button">Add Mountain</string>
     <string name="header">Mountain App</string>
-    <string name="textfield1">Textfield - 1</string>
-    <string name="textfield2">Textfield - 2</string>
+    <string name="image">Mountain</string>
 </resources>

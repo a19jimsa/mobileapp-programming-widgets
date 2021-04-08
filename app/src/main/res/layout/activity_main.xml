@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/mountain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -32,7 +43,8 @@
             android:id="@+id/my_listView"
             android:layout_width="wrap_content"
             android:layout_height="294dp"
-            android:layout_margin="20dp" />
+            android:layout_margin="20dp"
+            android:gravity="center"/>
 
         <EditText
             android:id="@+id/editText"
@@ -48,6 +60,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:textSize="24sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:padding="10dp"
             android:text="@string/button" />
 
     </LinearLayout>
