@@ -16,16 +16,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    private String[] mountainNames = {"Matterhorn", "Mont Blanc","Denali"};
-    private ArrayList<String> listData = new ArrayList<String>(Arrays.asList(mountainNames));
+    private ArrayList<Mountain> mountains = new ArrayList<Mountain>();
     private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_textview,
-                R.id.list_item_textView,listData);
+        mountains.add(new Mountain("Matterhorn"));
+        mountains.add(new Mountain("Mont Blanc"));
+        mountains.add(new Mountain("Denali"));
+        final ArrayAdapter<Mountain> adapter = new ArrayAdapter<Mountain>(this, R.layout.list_item_textview,
+                R.id.list_item_textView,mountains);
         final ListView my_listView = (ListView) findViewById(R.id.my_listView);
         my_listView.setAdapter(adapter);
         my_listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("Hej","Du har tryck på knappen!");
                 if(editText.getText().length() != 0){
-                    listData.add(editText.getText().toString());
+                    mountains.add(new Mountain(editText.getText().toString()));
                     my_listView.setAdapter(adapter);
                     Toast.makeText(getApplicationContext(), "Added new Mountain", Toast.LENGTH_SHORT).show();
                 }else{
