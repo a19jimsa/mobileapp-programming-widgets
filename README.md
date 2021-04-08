@@ -1,9 +1,28 @@
 
 # Rapport
 
-**Skriv din rapport här!**
+**Assignment 3**
 
-_Du kan ta bort all text som finns sedan tidigare_.
+Uppgiften gick ut på att göra en app med ett antal olika komponenter med olika layouter. Appen har två olika layouter, en constraint layout och en linear layout. Appen använder constraint layout för att organinsera en imageview och en linear layout. På så sätt hamnar alla komponenter inuti linear layout under varandra på ett snyggt och smidigt sätt. Här används centrering och marginaler på underliggande komponenter inuti den linjära layouten.
+
+Det finns en lista med olika berg som är en listview som lagrar flera textview inuti. Därför skapas en arrayadapter som lagrar alla textview element.
+
+```
+mountains.add(new Mountain("Matterhorn"));
+        mountains.add(new Mountain("Mont Blanc"));
+        mountains.add(new Mountain("Denali"));
+        final ArrayAdapter<Mountain> adapter = new ArrayAdapter<Mountain>(this, R.layout.list_item_textview,
+                R.id.list_item_textView,mountains);
+        final ListView my_listView = (ListView) findViewById(R.id.my_listView);
+        my_listView.setAdapter(adapter);
+        my_listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), "Bla bla", Toast.LENGTH_SHORT).show();
+            }
+        });
+```
+Här skapas en arraylist som lagrar berg som sedan läggs i en ArrayAdapter med en layout från xml som heter list_item_textview. Sedan sätts adaptern till listvyn(my_listView).
 
 ## Följande grundsyn gäller dugga-svar:
 
