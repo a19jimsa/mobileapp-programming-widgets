@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Hej","Du har tryck på knappen!");
                 if(editText.getText().length() != 0){
                     mountains.add(new Mountain(editText.getText().toString()));
-                    my_listView.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
                     Toast.makeText(getApplicationContext(), "Added new Mountain", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "Field can not be empty", Toast.LENGTH_SHORT).show();
