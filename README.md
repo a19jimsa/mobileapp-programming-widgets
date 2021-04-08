@@ -8,7 +8,7 @@ Uppgiften gick ut på att göra en app med ett antal olika komponenter med olika
 Det finns en lista med olika berg som är en listview som lagrar flera textview inuti. Därför skapas en arrayadapter som lagrar alla textview element.
 
 ```
-mountains.add(new Mountain("Matterhorn"));
+        mountains.add(new Mountain("Matterhorn"));
         mountains.add(new Mountain("Mont Blanc"));
         mountains.add(new Mountain("Denali"));
         final ArrayAdapter<Mountain> adapter = new ArrayAdapter<Mountain>(this, R.layout.list_item_textview,
