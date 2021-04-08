@@ -3,4 +3,5 @@
     <string name="button">Add Mountain</string>
     <string name="header">Mountain App</string>
     <string name="image">Mountain</string>
+    <string name="text">Enter mountain</string>
 </resources>

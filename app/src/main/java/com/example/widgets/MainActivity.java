@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 if(editText.getText().length() != 0){
                     mountains.add(new Mountain(editText.getText().toString()));
                     adapter.notifyDataSetChanged();
+                    editText.getText().clear();
                     Toast.makeText(getApplicationContext(), "Added new Mountain", Toast.LENGTH_SHORT).show();
                 }else{
                     Toast.makeText(getApplicationContext(), "Field can not be empty", Toast.LENGTH_SHORT).show();

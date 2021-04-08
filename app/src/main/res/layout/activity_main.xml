@@ -53,7 +53,7 @@
             android:layout_height="71dp"
             android:layout_margin="20dp"
             android:autofillHints="true"
-            android:hint="@string/button"
+            android:hint="@string/text"
             android:inputType="text" />
 
         <Button
