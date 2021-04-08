@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:layout_margin="20dp"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,26 +20,31 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
             android:text="Hello World!"
             android:textSize="24sp" />
 
         <ListView
             android:id="@+id/my_listView"
             android:layout_width="wrap_content"
-            android:layout_height="491dp" />
+            android:layout_margin="20dp"
+            android:layout_height="294dp" />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="71dp"
+            android:layout_margin="20dp"
             android:autofillHints="true"
             android:hint="@string/button"
             android:inputType="text" />
 
         <Button
             android:id="@+id/button"
+            android:layout_margin="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button" />
