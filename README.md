@@ -115,4 +115,4 @@ Tex:
         tools:ignore="VectorDrawableCompat" />
 ```
 
-![](App1.png | width=100)
+<img src="App1.png" width="200"/>
