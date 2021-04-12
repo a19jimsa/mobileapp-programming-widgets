@@ -60,6 +60,7 @@ Varje berg skrivs ut i en lista där varje rad representeras av en textview.
     android:textSize="24sp"></TextView>
 ```
 För att lägga till ett berg så kan man fylla i editText och trycka på knappen.
+<img src="app2.png" width="200"/>
 
 ```
         Button button = (Button) findViewById(R.id.button);
@@ -79,6 +80,7 @@ För att lägga till ett berg så kan man fylla i editText och trycka på knappe
         });
 
 ```
+<img src="app3.png" width="200"/>
 
 Alla widgets läggs till en linearLayout som i sin tur är nästlad i en constraintLayout. Sedan positioneras de i mitten och har ett mellanrum mellan varandra.
 
