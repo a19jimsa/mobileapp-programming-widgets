@@ -59,8 +59,10 @@ Varje berg skrivs ut i en lista där varje rad representeras av en textview.
     android:padding="10dp"
     android:textSize="24sp"></TextView>
 ```
-För att lägga till ett berg så kan man fylla i editText och trycka på knappen.
+
 <img src="app2.png" width="200"/>
+
+För att lägga till ett berg så kan man fylla i editText och trycka på knappen.
 
 ```
         Button button = (Button) findViewById(R.id.button);
