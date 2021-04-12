@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         my_listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "Bla bla", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Mountain Click", Toast.LENGTH_SHORT).show();
             }
         });
 
