@@ -114,3 +114,5 @@ Tex:
         app:srcCompat="@drawable/ic_launcher_foreground"
         tools:ignore="VectorDrawableCompat" />
 ```
+
+![](App1.png | width=100)
