@@ -26,7 +26,8 @@ Här skapas en arraylist som lagrar berg som sedan läggs i en ArrayAdapter med 
 Istället för att ha en array med alla berg så skapdes istället en klass så det blir lättare att lägga till berg. Vilket görs när man trycker på knappen till listan.
 I appen används tre olika vyer. En knapp, en edittext och en imagelayout. 
 
-```public class Mountain {
+```
+public class Mountain {
     private String name;
     private String location;
     private int height;
@@ -45,7 +46,8 @@ I appen används tre olika vyer. En knapp, en edittext och en imagelayout.
     public String toString(){
         return name;
     }
-}```
+}
+```
 
 Varje berg skrivs ut i en lista där varje rad representeras av en textview. 
 
@@ -97,7 +99,7 @@ Tex:
 
         <TextView
         ...
-        ```
+```
 Även en bild som finns när appen byggs sätts till bakgrund på appen via imageView.
 
 ``` <ImageView
@@ -111,4 +113,4 @@ Tex:
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_foreground"
         tools:ignore="VectorDrawableCompat" />
-        ```
+```
